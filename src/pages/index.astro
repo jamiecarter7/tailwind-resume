@@ -10,6 +10,14 @@ import csstoggle from "../images/toggle.gif";
 import tailwindarb from "../images/tailwindarbitrary.webp";
 import rtsllogo from "../images/rtsllogo.png";
 import astrotwv4 from "../images/astro-tw-v4.webp";
+import spirespy from "../images/spirespy.png";
+import pharmcd from "../images/pharmcd.png";
+import stt from "../images/studytimestables.png";
+import pharmailer from "../images/pharmailer.png";
+import a100words from "../images/100words.png";
+import hearts360 from "../images/hearts360.jpg";
+import bug1 from "../images/bug1.png";
+import bug2 from "../images/bug2.png";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -56,7 +64,14 @@ import astrotwv4 from "../images/astro-tw-v4.webp";
         I'm also a big fan of Astro. So I thought I'd combine the two for this
         job application.
       </p>
+      <p class="text-lg font-medium mt-8 max-w-xl">
+        I love designing in code, who doesnt love to dive into new projects?
+      </p>
+      <p class="text-lg font-medium mt-8 max-w-xl">
+        I enjoy pushing the limits to see what's acheivable using just Tailwind.
+      </p>
     </Section>
+
     <Section containerClassList={["relative, overflow-hidden"]}>
       <h2 class="text-4xl font-black">Who is Jamie?</h2>
       <p class="text-lg font-medium mt-4">
@@ -64,93 +79,319 @@ import astrotwv4 from "../images/astro-tw-v4.webp";
         creating beautiful websites and web applications.
       </p>
       <p class="text-lg font-medium mt-4">
-        I have passion for CSS and I'm a huge Tailwind fan.
+        I have passion for CSS and saying I'm a huge Tailwind fan would be an
+        understatement!
       </p>
-
-      <div class="flex gap-8">
-        <div class="w-1/2 mt-4">
-          <h3 class="pt-8 text-sm font-black uppercase">Current role</h3>
-          <div class="bg-gray-100 border border-gray-300 mt-4">
-            <div class="bg-white p-4 pb-3 m-0.5">
-              <Image src={rtsllogo} alt="" class="m-auto py-2" />
-            </div>
-            <div class="p-2 px-4">
-              <p class="font-medium">Product designer</p>
-              <p class="text-stone-500">Resolve to Save Lives</p>
+      <p class="text-lg font-medium mt-4">
+        Based in the UK, I have been working as a product designer for the last
+        two years designing dashboards, adding new features that help manage 4
+        million patients with hypertension and diabetes. I'm also a registered
+        pharmacist.
+      </p>
+      <p class="text-lg font-medium mt-4">
+        I'm a self-taught designer and frontend developer. I started designing
+        websites when I was 14 (I'm now 36) by creating Wordpress themes.
+      </p>
+      <p class="text-lg font-medium mt-4">
+        I started coding around 8 years ago and fell in love with Vue, though
+        I've recently picked up AstroJS and it's been great fun to work with.
+        AstroJS has allowed me to dabble in SolidJS and TSX.
+      </p>
+      <p class="text-lg font-medium mt-4">
+        (I'll admit I hated TSX at first but it's growing on me).
+      </p>
+      <div class="">
+        <h3 class="pt-8 text-sm font-black uppercase">Current role</h3>
+        <div class="flex gap-8">
+          <div class="w-1/2">
+            <div class="bg-gray-100 border border-gray-300 mt-4">
+              <div class="bg-white p-4 pb-3 m-0.5">
+                <Image src={rtsllogo} alt="" class="m-auto py-2" />
+              </div>
+              <div class="p-2 px-4">
+                <p class="font-medium">Product designer</p>
+                <p class="text-stone-500">Resolve to Save Lives</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="w-1/2 mt-4">
-          <h3 class="mt-7">Responsibilities</h3>
-          <ul class="list-disc list-inside ml-2 mt-6">
-            <li>Designing dashboards</li>
-            <li>
-              Keeping <a
-                class="text-gray-600 underline underline-offset-2"
-                href="https://hearts360.org/index.html">Simple.org</a
-              > up-to-date
-            </li>
-            <li>
-              Building <a
-                class="text-gray-600 underline underline-offset-2"
-                href="https://hearts360.org/index.html">Hearts360.org</a
-              >
-            </li>
-            <li>Data analytics</li>
-          </ul>
+          <div class="w-1/2 mt-4">
+            <h3 class="">Responsibilities:</h3>
+            <ul class="list-disc list-inside ml-2 mt-4">
+              <li>Designing dashboards</li>
+              <li>
+                Keeping <a
+                  class="text-gray-600 underline underline-offset-2"
+                  href="https://hearts360.org/index.html">Simple.org</a
+                > up-to-date
+              </li>
+              <li>
+                Building <a
+                  class="text-gray-600 underline underline-offset-2"
+                  href="https://hearts360.org/index.html">Hearts360.org</a
+                >
+              </li>
+              <li>Data analytics</li>
+            </ul>
+          </div>
         </div>
       </div>
       <p class="">I am also a pharmacist</p>
-    </Section>
-    <Section>
-      <h2 class="text-2xl font-bold leading-loose">Current employment</h2>
-    </Section>
-    <Section>
-      <h2 class="text-2xl font-bold leading-loose">Portfolio work</h2>
-    </Section>
-    <Section>
-      <h2 class="text-2xl font-bold leading-loose">Side projects</h2>
-      <div class="grid grid-cols-3 gap-3">
-        <article class="border border-gray-300">
-          <Image src={csstrianglesimages} class="" alt="test" />
-          <h1 class="font-bold text-xl">SpireSpy</h1>
-          <p></p>
-          <h2>challenges</h2>
-          <ul>
-            <li>Test</li>
-            <li>Test</li>
-            <li>Test</li>
-            <li>Test</li>
-          </ul>
-        </article>
-        <article>
-          <h1>Test</h1>
-          <p></p>
-          <h2>challenges</h2>
-          <ul>
-            <li>Test</li>
-            <li>Test</li>
-            <li>Test</li>
-            <li>Test</li>
-          </ul>
-        </article>
-      </div>
+      <h3 class="pt-8 text-sm font-black uppercase">Skills</h3>
+      <h4>Frontend</h4>
+      <ul class="grid grid-cols-6">
+        <li>
+          <Image src={tailwindarb} alt="html" />
+          <p class="text-center">HTML</p>
+        </li>
+        <li>CSS</li>
+        <li>Tailwind</li>
+        <li>VueJs</li>
+        <li>NuxtJs</li>
+        <li>AstroJs</li>
+        <li>Typescript</li>
+        <li>CSS animaton</li>
+        <li>ChartJS</li>
+        <li>SQL</li>
+      </ul>
+
+      <h3 class="pt-8 text-sm font-black uppercase">
+        Future CSS things that excite me - Layers and Transitions
+      </h3>
     </Section>
 
     <Section>
-      <h2 class="text-2xl font-bold leading-loose">
-        I write coding tutorials with a <br /><span
-          class="font-black decoration-blue-400 underline-offset-4 underline-thickness-2"
-        >
-          <span
-            class="font-black text-5xl
+      <h2 class="text-4xl font-black">I do design and code</h2>
+      <p class="text-lg font-medium mt-4">
+        Here is a selection of fun projects I've worked on over the years, with
+        a mix of professional and personal projects.
+      </p>
+      <div class="mt-5 flex flex-col gap-6">
+        <article class="border border-gray-300">
+          <Image src={spirespy} alt="spirespy" class="m-auto w-full" />
+          <div class="p-4">
+            <h1 class="font-bold text-2xl mt-2">SpireSpy</h1>
+            <p>Web app</p>
+            <p class="text-lg font-medium mt-4">
+              This is a web app helping gamers play 'Slay the Spire', a deck
+              building game. This site is popular with over 80k visitors and
+              over 1 million page views per year.
+            </p>
+            <p class="text-lg font-medium mt-4">
+              This website is designed for speed as players want info quickly to
+              avoid interupting gameplay. For this reason is has a highly
+              streamlined navigation and quick keyboard search.
+            </p>
+            <p class="text-lg font-medium mt-4">
+              This project was an engineering challenge because it required
+              precomputed data for around 500 game cards, manual pre-rendering
+              for 500 pages (before switching to Nuxt), staggered animations,
+              scalable cards (including font sizes) and modal overlays.
+            </p>
+            <h2 class="mt-4 font-bold text-sm uppercase">Key features:</h2>
+            <ul class="list-disc list-inside pl-2 *:my-1">
+              <li>
+                Card elements that scale with based on width, including font
+                size
+              </li>
+              <li>Time delayed animations</li>
+              <li>Modal overlays</li>
+              <li>Organised complex data</li>
+              <li>No backend</li>
+              <li>Keyboard shortcuts</li>
+              <li>Designed for rapid browsing</li>
+              <li>&gt;1million page views per year from ~80k users</li>
+              <li>SEO optimised</li>
+              <li>Manual pre-rendering (before switching to Nuxt)</li>
+            </ul>
+            <h2 class="mt-6 font-bold text-sm uppercase">Tech:</h2>
+            <h3 class="mt-4 uppercase font-bold text-xs">Version 1</h3>
+            <ul class="list-disc list-inside pl-2 *:my-1">
+              <li>Vue 2</li>
+              <li>Puppettier</li>
+              <li>Digital Ocean</li>
+            </ul>
+            <h3 class="mt-4 uppercase font-bold text-xs">Version 2</h3>
+            <ul class="list-disc list-inside pl-2 *:my-1">
+              <li>Vue 3</li>
+              <li>Nuxt 3</li>
+            </ul>
+          </div>
+          <a
+            class="group w-full h-12 bg-gray-200 flex justify-center items-center hover:bg-gray-200/75 duration-200 ease-out"
+            href="https://maybelatergames.co.uk/spirespy/cards/ironclad/tierlist"
+            target="_blank"
+            >Visit SpireSpy <span
+              class="inline-block group-hover:translate-x-1.5 duration-200 ease-out opacity-50 group-hover:opacity-100 ml-1"
+              >&rarr;</span
+            ></a
+          >
+        </article>
+
+        <article class="border border-gray-300">
+          <Image
+            src={hearts360}
+            alt="spirespy"
+            class="m-auto w-full border-b border-gray-200"
+          />
+          <div class="p-4">
+            <h1 class="font-bold text-2xl mt-2">Hearts360</h1>
+            <p>Static HTML design tempate</p>
+            <p class="text-lg font-medium mt-4">
+              Recently in my work I was asked to help create a base template for
+              a dashboard that others could use to implement their own
+              gold-standard hypertension and diabetes program dashboard.
+            </p>
+            <p class="text-lg font-medium mt-4">
+              The key focus around this project is to create well-designed
+              static web elements with simple and clear language.
+            </p>
+            <p class="text-lg font-medium mt-4">
+              Our aim is to provide a lightweight design system for other
+              software (or non-tech healthcare) teams to copy or re-create their
+              own dashboard.
+            </p>
+            <p class="text-lg font-medium mt-4">
+              The aim was to keep our CSS as lean as possible, avoiding complex
+              CSS styling where possible keeping simplicity as a core value.
+            </p>
+            <p class="text-lg font-medium mt-4">
+              This template has been implemented by one software provider with a
+              plan to roll out to anohter 5 in the coming months. There is a
+              potential that this framework will help manage a further 10
+              million patients in the near future.
+            </p>
+            <h2 class="mt-4 font-bold text-sm uppercase">Key features:</h2>
+            <ul class="list-disc list-inside pl-2 *:my-1">
+              <li>Simple design framework for others to copy and paste</li>
+              <li>Lightweght and lean CSS styling system</li>
+              <li>Clear and easy to understand language</li>
+              <li>Modular</li>
+              <li>No backend</li>
+              <li>Charts created using ChartJS</li>
+            </ul>
+            <h2 class="mt-6 font-bold text-sm uppercase">Tech:</h2>
+            <ul class="list-disc list-inside pl-2 *:my-1">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Minimal JS (only charts)</li>
+            </ul>
+          </div>
+          <a
+            class="group w-full h-12 bg-gray-200 flex justify-center items-center hover:bg-gray-200/75 duration-200 ease-out"
+            href="https://hearts360.org"
+            target="_blank"
+            >Visit Hearts360 <span
+              class="inline-block group-hover:translate-x-1.5 duration-200 ease-out opacity-50 group-hover:opacity-100 ml-1"
+              >&rarr;</span
+            ></a
+          >
+        </article>
+
+        <article class="border border-gray-300">
+          <Image
+            src={a100words}
+            alt="spirespy"
+            class="m-auto w-full border-b border-gray-200"
+          />
+          <div class="p-4">
+            <h1 class="font-bold text-2xl mt-2">100 Words</h1>
+            <p>Browser game (web app)</p>
+            <p class="text-lg font-medium mt-4">
+              This was a fun project to create an alternative version of Wordle,
+              but with my own spin on adding a 3d feeling and some nice
+              animations to the game style.
+            </p>
+            <p class="text-lg font-medium mt-4">
+              I wanted to create a fun bubbly design style with some cool
+              animations for the tiles.
+            </p>
+            <p class="text-lg font-medium mt-4">
+              The project was never fuly completed but the game is playable.
+            </p>
+            <p class="text-lg font-medium mt-4">
+              Note: Most animations were created using CSS rather than Tailwind
+            </p>
+            <h2 class="mt-4 font-bold text-sm uppercase">Key features:</h2>
+            <ul class="list-disc list-inside pl-2 *:my-1">
+              <li>Heavy focus on animations using JS and CSS keyframe</li>
+              <li>No animation libraries (why didn't I think of that!)</li>
+              <li>Strong focus on mobile design</li>
+              <li>Colourblind friendly</li>
+            </ul>
+            <h2 class="mt-6 font-bold text-sm uppercase">Tech:</h2>
+            <ul class="list-disc list-inside pl-2 *:my-1">
+              <li>Nuxt 3</li>
+              <li>Tailwind</li>
+              <li>LocalStorage</li>
+            </ul>
+          </div>
+          <a
+            class="group w-full h-12 bg-gray-200 flex justify-center items-center hover:bg-gray-200/75 duration-200 ease-out"
+            href="https://100wordsgame.com/"
+            target="_blank"
+            >Visit 100 Words <span
+              class="inline-block group-hover:translate-x-1.5 duration-200 ease-out opacity-50 group-hover:opacity-100 ml-1"
+              >&rarr;</span
+            ></a
+          >
+        </article>
+
+        <article class="border border-gray-300">
+          <Image
+            src={stt}
+            alt="spirespy"
+            class="m-auto w-full border-b border-gray-200"
+          />
+          <div class="p-4">
+            <h1 class="font-bold text-2xl mt-2">StudyTimesTables</h1>
+            <p>Website</p>
+            <p class="text-lg font-medium mt-4">
+              This is simple website where I was trying to add some playful
+              animation elements to boring topic. It includes a simple times
+              table quiz for kids.
+            </p>
+            <p class="text-lg font-medium mt-4">
+              The focus here is the animations.
+            </p>
+            <p class="text-lg font-medium mt-4">
+              Side note: Occasionally kids forced to use the site to let me know
+              they hate me via the contact form 👍.
+            </p>
+            <h2 class="mt-4 font-bold text-sm uppercase">Key features:</h2>
+            <ul class="list-disc list-inside pl-2 *:my-1">
+              <li>Fun vanilla CSS animations (using JS)</li>
+              <li>Simple design</li>
+              <li>Maths test for kids with fireworks for 100%</li>
+            </ul>
+            <h2 class="mt-6 font-bold text-sm uppercase">Tech:</h2>
+            <ul class="list-disc list-inside pl-2 *:my-1">
+              <li>Nuxt 2</li>
+              <li>Tailwind</li>
+            </ul>
+          </div>
+          <a
+            class="group w-full h-12 bg-gray-200 flex justify-center items-center hover:bg-gray-200/75 duration-200 ease-out"
+            href="https://studytimestables.com/"
+            target="_blank"
+            >Visit StudyTimesTables <span
+              class="inline-block group-hover:translate-x-1.5 duration-200 ease-out opacity-50 group-hover:opacity-100 ml-1"
+              >&rarr;</span
+            ></a
+          >
+        </article>
+      </div>
+    </Section>
+    <Section>
+      <h2 class="text-4xl font-black">
+        I write coding tutorials <br /><span
+          class="font-black decoration-blue-400 underline-offset-4 underline-thickness-2 text-4xl font-caveat
           bg-gradient-to-br
           from-sky-400
           to-blue-500
           text-transparent
-          bg-clip-text"
-            >focus on Tailwind</span
-          >
+          bg-clip-text pr-4"
+        >
+          with a focus on Tailwind
         </span>
       </h2>
       <p class="text-xl font-medium mt-4">
@@ -160,53 +401,25 @@ import astrotwv4 from "../images/astro-tw-v4.webp";
       <p class="text-xl font-medium mt-4">
         It feels good to help others work faster.
       </p>
+
       <h3 class="pt-8 text-sm font-black uppercase">Tailwind articles</h3>
-      <ul class="*:my-3">
+      <ul class="*:my-5">
         <li>
           <article
             class="border border-gray-300 hover:outline-5 outline-0 hover:outline-gray-200 outline-gray-200 duration-200 ease-in-out"
           >
             <a
-              class=""
-              href="https://medium.com/@jamiecarter7/css-triangles-using-tailwind-5a7ef8e338f5"
-            >
-              <div class="aspect-mediumimage flex-grow bg-red-400">
-                <Image
-                  src={csstrianglesimages}
-                  class="bg-gray-300"
-                  alt="CSS triangles using Tailwind"
-                  width="1800"
-                  height="1000"
-                />
-              </div>
-              <div class="p-5 px-6 border-l border-gray-200">
-                <h1 class="font-semibold text-sm">
-                  CSS triangles using Tailwind
-                </h1>
-                <p class="text-sm mt-2">
-                  Looking to use CSS triangles for some simple shapes on your
-                  website? Find 4 triangle directions here, all created using
-                  Tailwind.
-                </p>
-                <p class="text-xs font-medium text-stone-400 mt-2">32 reads</p>
-              </div>
-            </a>
-          </article>
-        </li>
-        <li>
-          <article
-            class="border border-gray-300 hover:outline-5 outline-0 hover:outline-gray-200 outline-gray-200 duration-200 ease-in-out"
-          >
-            <a
-              class=""
+              class="flex"
               href="https://medium.com/front-end-weekly/build-a-css-only-toggle-switch-using-tailwindcss-d2739882934"
             >
-              <Image
-                src={csstoggle}
-                class="aspect-mediumimage bg-gray-300"
-                alt="CSS triangles using Tailwind"
-              />
-              <div class="p-5 px-6 border-l border-gray-200">
+              <div class="aspect-mediumimage w-2/5 bg-red-400">
+                <Image
+                  src={csstoggle}
+                  class="w-full h-full object-cover bg-gray-300"
+                  alt="CSS triangles using Tailwind"
+                />
+              </div>
+              <div class="p-5 px-6 border-l border-gray-200 w-3/5">
                 <h1 class="font-semibold text-sm">
                   Build a CSS only toggle switch using TailwindCSS
                 </h1>
@@ -225,13 +438,47 @@ import astrotwv4 from "../images/astro-tw-v4.webp";
           <article
             class="border border-gray-300 hover:outline-5 outline-0 hover:outline-gray-200 outline-gray-200 duration-200 ease-in-out"
           >
-            <a class="" href="https://medium.com/p/df5c93aafa4a">
-              <Image
-                src={tailwindarb}
-                class="aspect-mediumimage bg-gray-300"
-                alt="CSS triangles using Tailwind"
-              />
-              <div class="p-5 px-6 border-l border-gray-200">
+            <a
+              class="flex"
+              href="https://medium.com/@jamiecarter7/css-triangles-using-tailwind-5a7ef8e338f5"
+            >
+              <div class="aspect-mediumimage w-2/5 bg-red-400">
+                <Image
+                  src={csstrianglesimages}
+                  class="bg-gray-300 object-cover h-full"
+                  alt="CSS triangles using Tailwind"
+                  width="1800"
+                  height="1000"
+                />
+              </div>
+              <div class="p-5 px-6 border-l border-gray-200 w-3/5">
+                <h1 class="font-semibold text-sm">
+                  CSS triangles using Tailwind
+                </h1>
+                <p class="text-sm mt-2">
+                  Looking to use CSS triangles for some simple shapes on your
+                  website? Find 4 triangle directions here, all created using
+                  Tailwind.
+                </p>
+                <p class="text-xs font-medium text-stone-400 mt-2">32 reads</p>
+              </div>
+            </a>
+          </article>
+        </li>
+
+        <li>
+          <article
+            class="border border-gray-300 hover:outline-5 outline-0 hover:outline-gray-200 outline-gray-200 duration-200 ease-in-out"
+          >
+            <a class="flex" href="https://medium.com/p/df5c93aafa4a">
+              <div class="aspect-mediumimage w-2/5 bg-red-400">
+                <Image
+                  src={tailwindarb}
+                  class="w-full h-full object-cover bg-gray-300"
+                  alt="CSS triangles using Tailwind"
+                />
+              </div>
+              <div class="p-5 px-6 border-l border-gray-200 w-3/5">
                 <h1 class="font-semibold text-sm">
                   How to use TailwindCSS JIT with negative arbitrary values
                 </h1>
@@ -251,15 +498,17 @@ import astrotwv4 from "../images/astro-tw-v4.webp";
             class="border border-gray-300 hover:outline-5 outline-0 hover:outline-gray-200 outline-gray-200 duration-200 ease-in-out"
           >
             <a
-              class=""
+              class="flex"
               href="https://medium.com/@jamiecarter7/how-to-get-tailwind-v4-alpha-working-on-astrojs-90fa722df6d1"
             >
-              <Image
-                src={astrotwv4}
-                class="aspect-mediumimage bg-gray-300"
-                alt="CSS triangles using Tailwind"
-              />
-              <div class="p-5 px-6 border-l border-gray-200">
+              <div class="aspect-mediumimage w-2/5 bg-red-400">
+                <Image
+                  src={astrotwv4}
+                  class="w-full h-full object-cover bg-gray-300"
+                  alt="CSS triangles using Tailwind"
+                />
+              </div>
+              <div class="p-5 px-6 border-l border-gray-200 w-3/5">
                 <h1 class="font-semibold text-sm">
                   How to get Tailwind v4 alpha working on AstroJS
                 </h1>
@@ -280,10 +529,6 @@ import astrotwv4 from "../images/astro-tw-v4.webp";
             class="overflow-hidden relative group p-4 -m-4 mt-5 inline-block underline underline-offset-6 decoration-1 decoration-stone-300 hover:decoration-transparent duration-200 ease-out"
             href="https://medium.com/@jamiecarter7"
           >
-            <!-- <div
-              class="overflow-clip bg-gray-200 w-full absolute top-0 left-0 h-full -z-10 -translate-x-full group-hover:translate-x-0 duration-200 ease-out"
-            > -->
-            <!-- </div> -->
             See all medium articles <span
               class="inline-block group-hover:translate-x-1.5 duration-200 ease-out opacity-50 group-hover:opacity-100"
               >&rarr;</span
@@ -291,7 +536,6 @@ import astrotwv4 from "../images/astro-tw-v4.webp";
           </a>
         </li>
       </ul>
-
       <h2 class="text-sm font-bold uppercase mt-8 mb-2">Other writing</h2>
       <ul>
         <li class="mb-1">
@@ -311,18 +555,76 @@ import astrotwv4 from "../images/astro-tw-v4.webp";
         </li>
       </ul>
     </Section>
+
+    <Section>
+      <h2 class="text-4xl font-black">I've done freelance work</h2>
+      <p class="text-lg font-medium mt-4">
+        I've worked on a number of freelance projects over the years. Here are a
+        two of my favourites.
+      </p>
+      <div class="grid grid-cols-2 gap-4 mt-8">
+        <article class="border border-gray-300 flex flex-col justify-between">
+          <div>
+            <Image
+              src={pharmcd}
+              alt="spirespy"
+              class="m-auto w-full border-b border-gray-200"
+            />
+            <div class="p-4">
+              <h1 class="font-bold text-2xl mt-2">PharmCD</h1>
+              <p>Static website</p>
+              <p class="text-lg font-medium mt-4">
+                Marketing page for a pharmacy product. Static HTML and CSS.
+              </p>
+            </div>
+          </div>
+          <a
+            class="group w-full h-12 bg-gray-200 flex justify-center items-center hover:bg-gray-200/75 duration-200 ease-out"
+            href="https://pharmcd.co.uk/"
+            target="_blank"
+            >Visit PharmCD <span
+              class="inline-block group-hover:translate-x-1.5 duration-200 ease-out opacity-50 group-hover:opacity-100 ml-1"
+              >&rarr;</span
+            ></a
+          >
+        </article>
+        <article class="border border-gray-300">
+          <Image
+            src={pharmailer}
+            alt="spirespy"
+            class="m-auto w-full border-b border-gray-200"
+          />
+          <div class="p-4">
+            <h1 class="font-bold text-2xl mt-2">Pharmailer</h1>
+            <p>Static website</p>
+            <p class="text-lg font-medium mt-4">
+              Marketing page. HTML and CSS using Nuxt2. I dedicated alot of time
+              to making the hero animation using vanilla CSS.
+            </p>
+          </div>
+          <a
+            class="group w-full h-12 bg-gray-200 flex justify-center items-center hover:bg-gray-200/75 duration-200 ease-out"
+            href="https://pharmailer.co.uk/"
+            target="_blank"
+            >Visit Pharmailer <span
+              class="inline-block group-hover:translate-x-1.5 duration-200 ease-out opacity-50 group-hover:opacity-100 ml-1"
+              >&rarr;</span
+            ></a
+          >
+        </article>
+      </div>
+    </Section>
+
+    <Section sectionClassList={["pb-8"]}>
+      <h2 class="text-4xl font-black">I found a bug</h2>
+
+      <p class="text-lg font-medium mt-4">
+        On the Tailwind Astro page, when using the light mode (not dark mode),
+        the footer links are not visible due to an additional image overlaying
+        these elements.
+      </p>
+      <Image src={bug1} alt="bug1" class="w-full mt-4" />
+      <Image src={bug2} alt="bug2" class="w-full mt-4" />
+    </Section>
   </main>
-
-  <Section>
-    <h2 class="text-2xl font-black">How I created this portfolio</h2>
-    <p>test</p>
-    <code>Text</code>
-  </Section>
-
-  <Section>
-    <h2 class="text-2xl font-black">Random bug finds</h2>
-    Tailsdwin astro page footer
-    <p>test</p>
-    <code>Text</code>
-  </Section>
 </Layout>
