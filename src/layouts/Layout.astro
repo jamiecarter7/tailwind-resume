@@ -5,7 +5,7 @@ interface Props {
 
 const { title } = Astro.props;
 
-import "/src/css/main.css";
+// import "src/css/main.css";
 ---
 
 <!doctype html>
@@ -15,7 +15,7 @@ import "/src/css/main.css";
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <!-- <link rel="stylesheet" href="src/css/main.css" /> -->
+    <link rel="stylesheet" href="src/css/main.css" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
