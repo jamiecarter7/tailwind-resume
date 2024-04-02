@@ -1,0 +1,329 @@
+---
+import { Image } from "astro:assets";
+
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Section from "../components/Section.astro";
+
+import lineloop from "../images/lineloop.png";
+import csstrianglesimages from "../images/css-triangles-using-tailwind.png";
+import csstoggle from "../images/toggle.gif";
+import tailwindarb from "../images/tailwindarbitrary.webp";
+import rtsllogo from "../images/rtsllogo.png";
+import astrotwv4 from "../images/astro-tw-v4.webp";
+---
+
+<Layout title="Welcome to Astro.">
+  <main class="text-gray-950 w-full">
+    <div class="relative flex justify-between items-center px-8 pt-4">
+      <div class="flex">
+        <label class="relative flex justify-between items-center group text-xl">
+          <input
+            type="checkbox"
+            class="border-none absolute left-1/2 -translate-x-1/2 peer appearance-none rounded-md"
+          />
+          <span
+            class="w-10 h-6 flex items-center flex-shrink-0 p-1 bg-gray-200 border border-gray-800 duration-300 ease-in-out peer-checked:bg-green-400 after:w-4 after:h-4 after:bg-white after:border after:border-gray-800 after:shadow-md after:duration-300 peer-checked:after:translate-x-[0.9rem] group-hover:after:translate-x-0.5 peer-checked:group-hover:after:translate-x-[0.8rem]"
+          ></span>
+        </label>
+        <p class="flex font-caveat ml-3 text-red-600 text-2xl rotate-3">
+          <span class="w-14 mr-1">
+            <Image class="" src={lineloop} alt="lineloop" />
+          </span>
+          <span>This is tailwind</span>
+        </p>
+      </div>
+      <div
+        class="flex gap-1 *:p-1.5 *:px-2 text-xs font-medium *:border *:border-gray-300"
+      >
+        <p class="border-none">Made with</p>
+        <p class="bg-black/5">Tailwind v4</p>
+        <p class="bg-black/5">AstroJS</p>
+      </div>
+    </div>
+    <Section containerClassList={[]}>
+      <p class="text-6xl font-black">Hey there! 👋</p>
+      <p class="mt-6 text-4xl font-bold leading-snug">
+        I'm <span class="text-indigo-600 font-black text-4xl">Jamie</span><span
+          class="font-kalam text-4xl"
+        >
+          <br />and I think Tailwind is a <span
+            class="font-black text-emerald-500 font-kalam text-4xl"
+            >big deal</span
+          >.</span
+        >
+      </p>
+      <p class="text-lg font-medium mt-8 max-w-xl">
+        I'm also a big fan of Astro. So I thought I'd combine the two for this
+        job application.
+      </p>
+    </Section>
+    <Section containerClassList={["relative, overflow-hidden"]}>
+      <h2 class="text-4xl font-black">Who is Jamie?</h2>
+      <p class="text-lg font-medium mt-4">
+        I'm a product designer and front-end developer with a passion for
+        creating beautiful websites and web applications.
+      </p>
+      <p class="text-lg font-medium mt-4">
+        I have passion for CSS and I'm a huge Tailwind fan.
+      </p>
+
+      <div class="flex gap-8">
+        <div class="w-1/2 mt-4">
+          <h3 class="pt-8 text-sm font-black uppercase">Current role</h3>
+          <div class="bg-gray-100 border border-gray-300 mt-4">
+            <div class="bg-white p-4 pb-3 m-0.5">
+              <Image src={rtsllogo} alt="" class="m-auto py-2" />
+            </div>
+            <div class="p-2 px-4">
+              <p class="font-medium">Product designer</p>
+              <p class="text-stone-500">Resolve to Save Lives</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 mt-4">
+          <h3 class="mt-7">Responsibilities</h3>
+          <ul class="list-disc list-inside ml-2 mt-6">
+            <li>Designing dashboards</li>
+            <li>
+              Keeping <a
+                class="text-gray-600 underline underline-offset-2"
+                href="https://hearts360.org/index.html">Simple.org</a
+              > up-to-date
+            </li>
+            <li>
+              Building <a
+                class="text-gray-600 underline underline-offset-2"
+                href="https://hearts360.org/index.html">Hearts360.org</a
+              >
+            </li>
+            <li>Data analytics</li>
+          </ul>
+        </div>
+      </div>
+      <p class="">I am also a pharmacist</p>
+    </Section>
+    <Section>
+      <h2 class="text-2xl font-bold leading-loose">Current employment</h2>
+    </Section>
+    <Section>
+      <h2 class="text-2xl font-bold leading-loose">Portfolio work</h2>
+    </Section>
+    <Section>
+      <h2 class="text-2xl font-bold leading-loose">Side projects</h2>
+      <div class="grid grid-cols-3 gap-3">
+        <article class="border border-gray-300">
+          <Image src={csstrianglesimages} class="" alt="test" />
+          <h1 class="font-bold text-xl">SpireSpy</h1>
+          <p></p>
+          <h2>challenges</h2>
+          <ul>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+          </ul>
+        </article>
+        <article>
+          <h1>Test</h1>
+          <p></p>
+          <h2>challenges</h2>
+          <ul>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+          </ul>
+        </article>
+      </div>
+    </Section>
+
+    <Section>
+      <h2 class="text-2xl font-bold leading-loose">
+        I write coding tutorials with a <br /><span
+          class="font-black decoration-blue-400 underline-offset-4 underline-thickness-2"
+        >
+          <span
+            class="font-black text-5xl
+          bg-gradient-to-br
+          from-sky-400
+          to-blue-500
+          text-transparent
+          bg-clip-text"
+            >focus on Tailwind</span
+          >
+        </span>
+      </h2>
+      <p class="text-xl font-medium mt-4">
+        I enjoy sharing articles explaining how I managed to complete coding
+        tasks that took me a long time to implement.
+      </p>
+      <p class="text-xl font-medium mt-4">
+        It feels good to help others work faster.
+      </p>
+      <h3 class="pt-8 text-sm font-black uppercase">Tailwind articles</h3>
+      <ul class="*:my-3">
+        <li>
+          <article
+            class="border border-gray-300 hover:outline-5 outline-0 hover:outline-gray-200 outline-gray-200 duration-200 ease-in-out"
+          >
+            <a
+              class=""
+              href="https://medium.com/@jamiecarter7/css-triangles-using-tailwind-5a7ef8e338f5"
+            >
+              <div class="aspect-mediumimage flex-grow bg-red-400">
+                <Image
+                  src={csstrianglesimages}
+                  class="bg-gray-300"
+                  alt="CSS triangles using Tailwind"
+                  width="1800"
+                  height="1000"
+                />
+              </div>
+              <div class="p-5 px-6 border-l border-gray-200">
+                <h1 class="font-semibold text-sm">
+                  CSS triangles using Tailwind
+                </h1>
+                <p class="text-sm mt-2">
+                  Looking to use CSS triangles for some simple shapes on your
+                  website? Find 4 triangle directions here, all created using
+                  Tailwind.
+                </p>
+                <p class="text-xs font-medium text-stone-400 mt-2">32 reads</p>
+              </div>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article
+            class="border border-gray-300 hover:outline-5 outline-0 hover:outline-gray-200 outline-gray-200 duration-200 ease-in-out"
+          >
+            <a
+              class=""
+              href="https://medium.com/front-end-weekly/build-a-css-only-toggle-switch-using-tailwindcss-d2739882934"
+            >
+              <Image
+                src={csstoggle}
+                class="aspect-mediumimage bg-gray-300"
+                alt="CSS triangles using Tailwind"
+              />
+              <div class="p-5 px-6 border-l border-gray-200">
+                <h1 class="font-semibold text-sm">
+                  Build a CSS only toggle switch using TailwindCSS
+                </h1>
+                <p class="text-sm mt-2">
+                  Build a CSS-only toggle switch using purely TailwindCSS in
+                  just 5 lines of HTML 👍. No Javascript!.
+                </p>
+                <p class="text-xs font-medium text-stone-400 mt-2">
+                  4,209 reads
+                </p>
+              </div>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article
+            class="border border-gray-300 hover:outline-5 outline-0 hover:outline-gray-200 outline-gray-200 duration-200 ease-in-out"
+          >
+            <a class="" href="https://medium.com/p/df5c93aafa4a">
+              <Image
+                src={tailwindarb}
+                class="aspect-mediumimage bg-gray-300"
+                alt="CSS triangles using Tailwind"
+              />
+              <div class="p-5 px-6 border-l border-gray-200">
+                <h1 class="font-semibold text-sm">
+                  How to use TailwindCSS JIT with negative arbitrary values
+                </h1>
+                <p class="text-sm mt-2">
+                  Attempting to use negative arbitrary values with the new
+                  TailwindCSS JIT tooling. Here’s how I got it working.
+                </p>
+                <p class="text-xs font-medium text-stone-400 mt-2">
+                  1,200 reads
+                </p>
+              </div>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article
+            class="border border-gray-300 hover:outline-5 outline-0 hover:outline-gray-200 outline-gray-200 duration-200 ease-in-out"
+          >
+            <a
+              class=""
+              href="https://medium.com/@jamiecarter7/how-to-get-tailwind-v4-alpha-working-on-astrojs-90fa722df6d1"
+            >
+              <Image
+                src={astrotwv4}
+                class="aspect-mediumimage bg-gray-300"
+                alt="CSS triangles using Tailwind"
+              />
+              <div class="p-5 px-6 border-l border-gray-200">
+                <h1 class="font-semibold text-sm">
+                  How to get Tailwind v4 alpha working on AstroJS
+                </h1>
+                <p class="text-sm mt-2">
+                  Looking to try Tailwind v4 alpha on Astro? Here’s a quick
+                  guide to get you up and running in two minutes.
+                </p>
+                <p class="text-xs font-medium text-stone-400 mt-2">
+                  0 reads (posted 02-Apr)
+                </p>
+              </div>
+            </a>
+          </article>
+        </li>
+
+        <li>
+          <a
+            class="overflow-hidden relative group p-4 -m-4 mt-5 inline-block underline underline-offset-6 decoration-1 decoration-stone-300 hover:decoration-transparent duration-200 ease-out"
+            href="https://medium.com/@jamiecarter7"
+          >
+            <!-- <div
+              class="overflow-clip bg-gray-200 w-full absolute top-0 left-0 h-full -z-10 -translate-x-full group-hover:translate-x-0 duration-200 ease-out"
+            > -->
+            <!-- </div> -->
+            See all medium articles <span
+              class="inline-block group-hover:translate-x-1.5 duration-200 ease-out opacity-50 group-hover:opacity-100"
+              >&rarr;</span
+            >
+          </a>
+        </li>
+      </ul>
+
+      <h2 class="text-sm font-bold uppercase mt-8 mb-2">Other writing</h2>
+      <ul>
+        <li class="mb-1">
+          <a
+            href="https://www.simple.org/blog/thirty-million-bp-measures-in-simple/"
+            class="underline underline-offset-2"
+            >The power of 30 million blood pressure measures - Simple.org</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.simple.org/blog/revealing-data-behind-overdue-patient-calls/"
+            class="underline underline-offset-2"
+            >Calling overdue patients helps improve return-to-care rates -
+            Simple.org</a
+          >
+        </li>
+      </ul>
+    </Section>
+  </main>
+
+  <Section>
+    <h2 class="text-2xl font-black">How I created this portfolio</h2>
+    <p>test</p>
+    <code>Text</code>
+  </Section>
+
+  <Section>
+    <h2 class="text-2xl font-black">Random bug finds</h2>
+    Tailsdwin astro page footer
+    <p>test</p>
+    <code>Text</code>
+  </Section>
+</Layout>

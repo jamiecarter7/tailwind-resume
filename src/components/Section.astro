@@ -1,0 +1,33 @@
+---
+interface Props {
+  sectionClassList?: Array<string>;
+  containerClassList?: Array<string>;
+}
+
+const { sectionClassList, containerClassList } = Astro.props;
+---
+
+<section class="p-8 py-4" class:list={sectionClassList}>
+  <div
+    class="relative border border-gray-800 p-16 py-36"
+    class:list={containerClassList}
+  >
+    <div class="max-w-xl m-auto">
+      <slot />
+      <div
+        class="absolute bottom-4 right-4 group flex justify-end text-sm font-medium"
+      >
+        <p
+          class="relative block bg-gray-200/75 text-stone-600 p-1 px-2 text-xs hover:cursor-pointer"
+        >
+          Classes
+        </p>
+        <div
+          class="absolute bottom-full hidden group-hover:block hover:cursor-pointer bg-gray-200/75"
+        >
+          Styles used: test
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
