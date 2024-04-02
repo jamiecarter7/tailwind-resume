@@ -5,11 +5,13 @@ import { defineConfig } from "astro/config";
 //   integrations: [tailwind()]
 // });
 
-import tailwindcss from "@tailwindcss/vite";
+// import tailwindcss from "@tailwindcss/vite";
 // import { defineConfig } from "vite";
 
 export default defineConfig({
-  vite: {
-    plugins: [tailwindcss()],
-  },
+  // integrations: [tailwindcss()],
+  // vite: {
+  //   // plugins: [tailwindcss()],
+  //   "@tailwindcss/postcss": {},
+  // },
 });
