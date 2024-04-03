@@ -751,10 +751,16 @@ import bug2 from "../images/bug2.png";
         or feels out of date if it ever does.
       </p>
     </Section>
+    <div class="flex justify-end mx-8 my-4 -mt-5">
+      <a
+        href="https://github.com/jamiecarter7/tailwind-resume"
+        class="text-gray-600 dark:text-white underline underline-offset-4 text-sm inline-block"
+        >Github repo
+      </a>
+    </div>
   </main>
-</Layout>
 
-<script>
+  <!-- <script>
   // On page load or when changing themes, best to add inline in `head` to avoid FOUC
   if (
     localStorage.theme === "dark" ||
@@ -774,4 +780,5 @@ import bug2 from "../images/bug2.png";
 
   // Whenever the user explicitly chooses to respect the OS preference
   localStorage.removeItem("theme");
-</script>
+</script> -->
+</Layout>
