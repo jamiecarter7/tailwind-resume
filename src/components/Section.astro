@@ -9,12 +9,12 @@ const { sectionClassList, containerClassList } = Astro.props;
 
 <section class="p-8 py-4" class:list={sectionClassList}>
   <div
-    class="relative border border-gray-800 p-16 py-36"
+    class="relative border border-gray-800 dark:border-gray-200 p-16 py-36"
     class:list={containerClassList}
   >
     <div class="max-w-xl m-auto">
       <slot />
-      <div
+      <!-- <div
         class="absolute bottom-4 right-4 group flex justify-end text-sm font-medium"
       >
         <p
@@ -26,8 +26,7 @@ const { sectionClassList, containerClassList } = Astro.props;
           class="absolute bottom-full hidden group-hover:block hover:cursor-pointer bg-gray-200/75"
         >
           Styles used: test
-        </div>
-      </div>
+        </div> -->
     </div>
   </div>
 </section>

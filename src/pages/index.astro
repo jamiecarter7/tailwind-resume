@@ -21,7 +21,7 @@ import bug2 from "../images/bug2.png";
 ---
 
 <Layout title="Welcome to Astro.">
-  <main class="text-gray-950 w-full">
+  <main class="text-gray-950 dark:text-gray-200 w-full light">
     <div class="relative flex justify-between items-center px-8 pt-4">
       <div class="flex">
         <label class="relative flex justify-between items-center group text-xl">
@@ -30,18 +30,24 @@ import bug2 from "../images/bug2.png";
             class="border-none absolute left-1/2 -translate-x-1/2 peer appearance-none rounded-md"
           />
           <span
-            class="w-10 h-6 flex items-center flex-shrink-0 p-1 bg-gray-200 border border-gray-800 duration-300 ease-in-out peer-checked:bg-green-400 after:w-4 after:h-4 after:bg-white after:border after:border-gray-800 after:shadow-md after:duration-300 peer-checked:after:translate-x-[0.9rem] group-hover:after:translate-x-0.5 peer-checked:group-hover:after:translate-x-[0.8rem]"
+            class="w-10 h-6 flex items-center flex-shrink-0 p-1 bg-gray-200 dark:bg-gray-800 border border-gray-800 dark:border-gray-200 duration-300 ease-in-out peer-checked:bg-green-400 after:w-4 after:h-4 after:bg-white after:border after:border-gray-800 dark:after:border-gray-200/50 after:shadow-md after:duration-300 peer-checked:after:translate-x-[0.9rem] group-hover:after:translate-x-0.5 peer-checked:group-hover:after:translate-x-[0.8rem]"
           ></span>
         </label>
-        <p class="flex font-caveat ml-3 text-red-600 text-2xl rotate-3">
+        <p
+          class="flex items-center font-caveat ml-3 text-red-600 text-2xl rotate-3"
+        >
           <span class="w-14 mr-1">
             <Image class="" src={lineloop} alt="lineloop" />
           </span>
-          <span>This is tailwind</span>
+          <span
+            >This is tailwind, <br />
+            <span class="">but I cant get dark/light mode to work with v4</span
+            ></span
+          >
         </p>
       </div>
       <div
-        class="flex gap-1 *:p-1.5 *:px-2 text-xs font-medium *:border *:border-gray-300"
+        class="flex gap-1 *:p-1.5 *:px-2 text-xs font-medium *:border *:border-gray-300 dark:*:border-gray-600"
       >
         <p class="border-none">Made with</p>
         <p class="bg-black/5">Tailwind v4</p>
@@ -55,20 +61,19 @@ import bug2 from "../images/bug2.png";
           class="font-kalam text-4xl"
         >
           <br />and I think Tailwind is a <span
-            class="font-black text-emerald-500 font-kalam text-4xl"
+            class="font-black text-emerald-500 font-kalam text-3xl"
             >big deal</span
           >.</span
         >
       </p>
       <p class="text-lg font-medium mt-8 max-w-xl">
-        I'm also a big fan of Astro. So I thought I'd combine the two for this
-        job application.
+        I'm a huge fan of Tailwind and I'm excited to see there is an
+        opportunity to join the team and help contribute to this amazing
+        project.
       </p>
       <p class="text-lg font-medium mt-8 max-w-xl">
-        I love designing in code, who doesnt love to dive into new projects?
-      </p>
-      <p class="text-lg font-medium mt-8 max-w-xl">
-        I enjoy pushing the limits to see what's acheivable using just Tailwind.
+        This mini website is my application for the role, and its creating using
+        Astro and Tailwind v4.
       </p>
     </Section>
 
@@ -102,31 +107,35 @@ import bug2 from "../images/bug2.png";
       </p>
       <div class="">
         <h3 class="pt-8 text-sm font-black uppercase">Current role</h3>
-        <div class="flex gap-8">
-          <div class="w-1/2">
-            <div class="bg-gray-100 border border-gray-300 mt-4">
+        <div class="md:flex gap-8">
+          <div class="md:w-1/2">
+            <div
+              class="bg-gray-100 border dark:bg-gray-900 border-gray-300 dark:border-gray-700 mt-4"
+            >
               <div class="bg-white p-4 pb-3 m-0.5">
                 <Image src={rtsllogo} alt="" class="m-auto py-2" />
               </div>
               <div class="p-2 px-4">
                 <p class="font-medium">Product designer</p>
-                <p class="text-stone-500">Resolve to Save Lives</p>
+                <p class="text-stone-500 dark:text-stone-400">
+                  Resolve to Save Lives
+                </p>
               </div>
             </div>
           </div>
-          <div class="w-1/2 mt-4">
+          <div class="md:w-1/2 mt-4">
             <h3 class="">Responsibilities:</h3>
             <ul class="list-disc list-inside ml-2 mt-4">
               <li>Designing dashboards</li>
               <li>
                 Keeping <a
-                  class="text-gray-600 underline underline-offset-2"
+                  class="text-gray-600 dark:text-gray-400 underline underline-offset-2"
                   href="https://hearts360.org/index.html">Simple.org</a
                 > up-to-date
               </li>
               <li>
                 Building <a
-                  class="text-gray-600 underline underline-offset-2"
+                  class="text-gray-600 dark:text-gray-400 underline underline-offset-2"
                   href="https://hearts360.org/index.html">Hearts360.org</a
                 >
               </li>
@@ -135,15 +144,18 @@ import bug2 from "../images/bug2.png";
           </div>
         </div>
       </div>
-      <p class="">I am also a pharmacist</p>
       <h3 class="pt-8 text-sm font-black uppercase">Skills</h3>
-      <h4>Frontend</h4>
-      <ul class="grid grid-cols-6">
+      <ul
+        class="inline-flex flex-wrap *:whitespace-nowrap text-sm gap-4 mt-4 max-w-lg *:px-1.5 *:py-1 *:bg-gray-200 dark:*:bg-gray-800 *:border *:border-gray-400 dark:*:border-gray-700"
+      >
         <li>
-          <Image src={tailwindarb} alt="html" />
+          <!-- <Image src={tailwindarb} alt="html" /> -->
           <p class="text-center">HTML</p>
         </li>
-        <li>CSS</li>
+        <li>
+          <!-- <Image src={tailwindarb} alt="html" /> -->
+          <p class="text-center">CSS</p>
+        </li>
         <li>Tailwind</li>
         <li>VueJs</li>
         <li>NuxtJs</li>
@@ -154,9 +166,71 @@ import bug2 from "../images/bug2.png";
         <li>SQL</li>
       </ul>
 
-      <h3 class="pt-8 text-sm font-black uppercase">
-        Future CSS things that excite me - Layers and Transitions
-      </h3>
+      <h3 class="pt-8 text-sm font-black uppercase">What excites me</h3>
+      <h4 class="pt-8 text-xs font-black uppercase">Testing the limits</h4>
+      <p class="text-lg font-medium mt-4">
+        I love to test the limits of what CSS and Tailwind can do.
+      </p>
+      <h4 class="pt-8 text-xs font-black uppercase">Pixel perfect design</h4>
+      <p class="text-lg font-medium mt-4">
+        Writing CSS to create beautiful interfaces almost feels like painting a
+        picture or making a sculpture. I am a stickler for pixel perfect design
+        where the time allows.
+      </p>
+      <p class="text-lg font-medium mt-4">
+        I particularly love adding that last 5% polish to a project, the extra
+        details make all the difference to the user experience.
+      </p>
+
+      <h4 class="pt-8 text-xs font-black uppercase">
+        Creating elegant solutions
+      </h4>
+      <p class="text-lg font-medium mt-4">
+        I enjoy the challenge of trying to create useful elegant layout
+        solutions to problems, such as a sticky footer using flexbox and
+        justify-between, or using pure % to create scaleable elements.
+      </p>
+
+      <h4 class="pt-8 text-xs font-black uppercase">Squashing CSS bugs</h4>
+      <p class="text-lg font-medium mt-4">
+        I'll admit I'm a stickler for hunting bugs in CSS (and other code). I
+        enjoy finding and fixing bugs, refactoring code to reduce repetition
+        (DRY)
+      </p>
+      <p class="text-lg font-medium mt-4">
+        I came across the <a
+          href="https://twitter.com/adamwathan/status/1734696245015494711"
+          class="text-gray-600 dark:text-gray-400 underline underline-offset-2"
+          >'min-width: 0%;'</a
+        > bug this month when working with flexbox on a work project. But I refused
+        to let it beat me, I enjoy a challenge.
+      </p>
+      <h4 class="pt-8 text-xs font-black uppercase">Animations</h4>
+      <p class="text-lg font-medium mt-4">
+        I absolutely love adding subtle animations to all my projects to improve
+        both asthetic and user experience of interfaces I work on, you'll see
+        some of this shown in the next section.
+      </p>
+      <p class="text-lg font-medium mt-4">
+        My current experience adding animation is with vanilla CSS mixed with
+        JS, but I do intend to explore Framer motion library in the near future.
+      </p>
+      <p class="text-lg font-medium mt-4">
+        I also found a small visual bug in the Tailwind docs page.
+      </p>
+      <h4 class="pt-8 text-xs font-black uppercase">New features</h4>
+
+      <p class="text-lg font-medium mt-4">
+        Though I haven't had so much time to play with some of the newest
+        features of CSS such as layers and browser transitions I find it
+        exciting that CSS is continually evolving.
+      </p>
+
+      <h4 class="pt-8 text-xs font-black uppercase">Stats nerd</h4>
+      <p class="text-lg font-medium mt-4">
+        I am a stats nerd, which is knid how I ended up working on dashboards. I
+        love all things numbers.
+      </p>
     </Section>
 
     <Section>
@@ -166,7 +240,7 @@ import bug2 from "../images/bug2.png";
         a mix of professional and personal projects.
       </p>
       <div class="mt-5 flex flex-col gap-6">
-        <article class="border border-gray-300">
+        <article class="border border-gray-300 dark:border-gray-700">
           <Image src={spirespy} alt="spirespy" class="m-auto w-full" />
           <div class="p-4">
             <h1 class="font-bold text-2xl mt-2">SpireSpy</h1>
@@ -209,15 +283,17 @@ import bug2 from "../images/bug2.png";
               <li>Vue 2</li>
               <li>Puppettier</li>
               <li>Digital Ocean</li>
+              <li>CSS</li>
             </ul>
             <h3 class="mt-4 uppercase font-bold text-xs">Version 2</h3>
             <ul class="list-disc list-inside pl-2 *:my-1">
               <li>Vue 3</li>
               <li>Nuxt 3</li>
+              <li>Tailwind and CSS</li>
             </ul>
           </div>
           <a
-            class="group w-full h-12 bg-gray-200 flex justify-center items-center hover:bg-gray-200/75 duration-200 ease-out"
+            class="group w-full h-12 bg-gray-200 dark:bg-gray-800 flex justify-center items-center hover:bg-gray-200/75 dark:hover:bg-gray-700/75 duration-200 ease-out"
             href="https://maybelatergames.co.uk/spirespy/cards/ironclad/tierlist"
             target="_blank"
             >Visit SpireSpy <span
@@ -227,7 +303,7 @@ import bug2 from "../images/bug2.png";
           >
         </article>
 
-        <article class="border border-gray-300">
+        <article class="border border-gray-300 dark:border-gray-700">
           <Image
             src={hearts360}
             alt="spirespy"
@@ -277,7 +353,7 @@ import bug2 from "../images/bug2.png";
             </ul>
           </div>
           <a
-            class="group w-full h-12 bg-gray-200 flex justify-center items-center hover:bg-gray-200/75 duration-200 ease-out"
+            class="group w-full h-12 bg-gray-200 dark:bg-gray-800 flex justify-center items-center hover:bg-gray-200/75 dark:hover:bg-gray-700/75 duration-200 ease-out"
             href="https://hearts360.org"
             target="_blank"
             >Visit Hearts360 <span
@@ -287,7 +363,7 @@ import bug2 from "../images/bug2.png";
           >
         </article>
 
-        <article class="border border-gray-300">
+        <article class="border border-gray-300 dark:border-gray-700">
           <Image
             src={a100words}
             alt="spirespy"
@@ -326,7 +402,7 @@ import bug2 from "../images/bug2.png";
             </ul>
           </div>
           <a
-            class="group w-full h-12 bg-gray-200 flex justify-center items-center hover:bg-gray-200/75 duration-200 ease-out"
+            class="group w-full h-12 bg-gray-200 dark:bg-gray-800 flex justify-center items-center hover:bg-gray-200/75 dark:hover:bg-gray-700/75 duration-200 ease-out"
             href="https://100wordsgame.com/"
             target="_blank"
             >Visit 100 Words <span
@@ -336,7 +412,7 @@ import bug2 from "../images/bug2.png";
           >
         </article>
 
-        <article class="border border-gray-300">
+        <article class="border border-gray-300 dark:border-gray-700">
           <Image
             src={stt}
             alt="spirespy"
@@ -370,7 +446,7 @@ import bug2 from "../images/bug2.png";
             </ul>
           </div>
           <a
-            class="group w-full h-12 bg-gray-200 flex justify-center items-center hover:bg-gray-200/75 duration-200 ease-out"
+            class="group w-full h-12 bg-gray-200 dark:bg-gray-800 flex justify-center items-center hover:bg-gray-200/75 dark:hover:bg-gray-700/75 duration-200 ease-out"
             href="https://studytimestables.com/"
             target="_blank"
             >Visit StudyTimesTables <span
@@ -406,20 +482,22 @@ import bug2 from "../images/bug2.png";
       <ul class="*:my-5">
         <li>
           <article
-            class="border border-gray-300 hover:outline-5 outline-0 hover:outline-gray-200 outline-gray-200 duration-200 ease-in-out"
+            class="border border-gray-300 dark:border-gray-700 hover:outline-5 outline-0 hover:outline-gray-200 dark:hover:outline-gray-800 outline-gray-200 dark:outline-gray-800 duration-200 ease-in-out"
           >
             <a
-              class="flex"
+              class="md:flex"
               href="https://medium.com/front-end-weekly/build-a-css-only-toggle-switch-using-tailwindcss-d2739882934"
             >
-              <div class="aspect-mediumimage w-2/5 bg-red-400">
+              <div class="aspect-mediumimage md:w-2/5">
                 <Image
                   src={csstoggle}
-                  class="w-full h-full object-cover bg-gray-300"
+                  class="w-full h-full object-cover"
                   alt="CSS triangles using Tailwind"
                 />
               </div>
-              <div class="p-5 px-6 border-l border-gray-200 w-3/5">
+              <div
+                class="p-5 px-6 border-l border-gray-200 dark:border-gray-800 md:w-3/5"
+              >
                 <h1 class="font-semibold text-sm">
                   Build a CSS only toggle switch using TailwindCSS
                 </h1>
@@ -436,22 +514,24 @@ import bug2 from "../images/bug2.png";
         </li>
         <li>
           <article
-            class="border border-gray-300 hover:outline-5 outline-0 hover:outline-gray-200 outline-gray-200 duration-200 ease-in-out"
+            class="border border-gray-300 dark:border-gray-700 hover:outline-5 outline-0 hover:outline-gray-200 dark:hover:outline-gray-800 outline-gray-200 dark:outline-gray-800 duration-200 ease-in-out"
           >
             <a
-              class="flex"
+              class="md:flex"
               href="https://medium.com/@jamiecarter7/css-triangles-using-tailwind-5a7ef8e338f5"
             >
-              <div class="aspect-mediumimage w-2/5 bg-red-400">
+              <div class="aspect-mediumimage md:w-2/5">
                 <Image
                   src={csstrianglesimages}
-                  class="bg-gray-300 object-cover h-full"
+                  class="object-cover h-full"
                   alt="CSS triangles using Tailwind"
                   width="1800"
                   height="1000"
                 />
               </div>
-              <div class="p-5 px-6 border-l border-gray-200 w-3/5">
+              <div
+                class="p-5 px-6 border-l border-gray-200 dark:border-gray-800 md:w-3/5"
+              >
                 <h1 class="font-semibold text-sm">
                   CSS triangles using Tailwind
                 </h1>
@@ -468,17 +548,19 @@ import bug2 from "../images/bug2.png";
 
         <li>
           <article
-            class="border border-gray-300 hover:outline-5 outline-0 hover:outline-gray-200 outline-gray-200 duration-200 ease-in-out"
+            class="border border-gray-300 dark:border-gray-700 hover:outline-5 outline-0 hover:outline-gray-200 dark:hover:outline-gray-800 outline-gray-200 dark:outline-gray-800 duration-200 ease-in-out"
           >
-            <a class="flex" href="https://medium.com/p/df5c93aafa4a">
-              <div class="aspect-mediumimage w-2/5 bg-red-400">
+            <a class="md:flex" href="https://medium.com/p/df5c93aafa4a">
+              <div class="aspect-mediumimage md:w-2/5">
                 <Image
                   src={tailwindarb}
-                  class="w-full h-full object-cover bg-gray-300"
+                  class="object-cover h-full"
                   alt="CSS triangles using Tailwind"
                 />
               </div>
-              <div class="p-5 px-6 border-l border-gray-200 w-3/5">
+              <div
+                class="p-5 px-6 border-l border-gray-200 dark:border-gray-800 md:w-3/5"
+              >
                 <h1 class="font-semibold text-sm">
                   How to use TailwindCSS JIT with negative arbitrary values
                 </h1>
@@ -495,20 +577,22 @@ import bug2 from "../images/bug2.png";
         </li>
         <li>
           <article
-            class="border border-gray-300 hover:outline-5 outline-0 hover:outline-gray-200 outline-gray-200 duration-200 ease-in-out"
+            class="border border-gray-300 dark:border-gray-700 hover:outline-5 outline-0 hover:outline-gray-200 dark:hover:outline-gray-800 outline-gray-200 dark:outline-gray-800 duration-200 ease-in-out"
           >
             <a
-              class="flex"
+              class="md:flex"
               href="https://medium.com/@jamiecarter7/how-to-get-tailwind-v4-alpha-working-on-astrojs-90fa722df6d1"
             >
-              <div class="aspect-mediumimage w-2/5 bg-red-400">
+              <div class="aspect-mediumimage md:w-2/5">
                 <Image
                   src={astrotwv4}
-                  class="w-full h-full object-cover bg-gray-300"
+                  class="w-full h-full object-cover"
                   alt="CSS triangles using Tailwind"
                 />
               </div>
-              <div class="p-5 px-6 border-l border-gray-200 w-3/5">
+              <div
+                class="p-5 px-6 border-l border-gray-200 dark:border-gray-800 md:w-3/5"
+              >
                 <h1 class="font-semibold text-sm">
                   How to get Tailwind v4 alpha working on AstroJS
                 </h1>
@@ -526,7 +610,7 @@ import bug2 from "../images/bug2.png";
 
         <li>
           <a
-            class="overflow-hidden relative group p-4 -m-4 mt-5 inline-block underline underline-offset-6 decoration-1 decoration-stone-300 hover:decoration-transparent duration-200 ease-out"
+            class="relative group mt-5 inline-block underline underline-offset-6 decoration-1 decoration-stone-300 hover:decoration-transparent duration-200 ease-out"
             href="https://medium.com/@jamiecarter7"
           >
             See all medium articles <span
@@ -541,16 +625,22 @@ import bug2 from "../images/bug2.png";
         <li class="mb-1">
           <a
             href="https://www.simple.org/blog/thirty-million-bp-measures-in-simple/"
-            class="underline underline-offset-2"
-            >The power of 30 million blood pressure measures - Simple.org</a
+            class="group underline underline-offset-4"
+            >The power of 30 million blood pressure measures - Simple.org<span
+              class="inline-block group-hover:translate-x-1.5 duration-200 ease-out opacity-50 group-hover:opacity-100 ml-1"
+              >&rarr;</span
+            ></a
           >
         </li>
         <li>
           <a
             href="https://www.simple.org/blog/revealing-data-behind-overdue-patient-calls/"
-            class="underline underline-offset-2"
+            class="group underline underline-offset-4"
             >Calling overdue patients helps improve return-to-care rates -
-            Simple.org</a
+            Simple.org<span
+              class="inline-block group-hover:translate-x-1.5 duration-200 ease-out opacity-50 group-hover:opacity-100 ml-1"
+              >&rarr;</span
+            ></a
           >
         </li>
       </ul>
@@ -563,13 +653,11 @@ import bug2 from "../images/bug2.png";
         two of my favourites.
       </p>
       <div class="grid grid-cols-2 gap-4 mt-8">
-        <article class="border border-gray-300 flex flex-col justify-between">
+        <article
+          class="border border-gray-300 dark:border-gray-700 flex flex-col justify-between"
+        >
           <div>
-            <Image
-              src={pharmcd}
-              alt="spirespy"
-              class="m-auto w-full border-b border-gray-200"
-            />
+            <Image src={pharmcd} alt="spirespy" v />
             <div class="p-4">
               <h1 class="font-bold text-2xl mt-2">PharmCD</h1>
               <p>Static website</p>
@@ -579,7 +667,7 @@ import bug2 from "../images/bug2.png";
             </div>
           </div>
           <a
-            class="group w-full h-12 bg-gray-200 flex justify-center items-center hover:bg-gray-200/75 duration-200 ease-out"
+            class="group w-full h-12 bg-gray-200 dark:bg-gray-800 flex justify-center items-center hover:bg-gray-200/75 dark:hover:bg-gray-700/75 duration-200 ease-out"
             href="https://pharmcd.co.uk/"
             target="_blank"
             >Visit PharmCD <span
@@ -588,11 +676,13 @@ import bug2 from "../images/bug2.png";
             ></a
           >
         </article>
-        <article class="border border-gray-300">
+        <article
+          class="border border-gray-300 dark:border-gray-700 flex flex-col justify-between"
+        >
           <Image
             src={pharmailer}
             alt="spirespy"
-            class="m-auto w-full border-b border-gray-200"
+            class="border border-gray-300 dark:border-gray-700 flex flex-col justify-between"
           />
           <div class="p-4">
             <h1 class="font-bold text-2xl mt-2">Pharmailer</h1>
@@ -603,7 +693,7 @@ import bug2 from "../images/bug2.png";
             </p>
           </div>
           <a
-            class="group w-full h-12 bg-gray-200 flex justify-center items-center hover:bg-gray-200/75 duration-200 ease-out"
+            class="group w-full h-12 bg-gray-200 dark:bg-gray-800 flex justify-center items-center hover:bg-gray-200/75 dark:hover:bg-gray-700/75 duration-200 ease-out"
             href="https://pharmailer.co.uk/"
             target="_blank"
             >Visit Pharmailer <span
@@ -625,6 +715,63 @@ import bug2 from "../images/bug2.png";
       </p>
       <Image src={bug1} alt="bug1" class="w-full mt-4" />
       <Image src={bug2} alt="bug2" class="w-full mt-4" />
+      <p class="text-lg font-medium mt-4">
+        There seems to be an additional image in the body of this page, whereas
+        other pages only seem to have one image at the top of the page.
+      </p>
+      <pre
+        class="bg-gray-950 text-white p-4 overflow-y-scroll mt-4">
+&lt;p class=&quot;hidden sm:block absolute -z-10 top-0 left-[15%] pt-[40%] 2xl:left-[40%] 2xl:pt-[8%] dark:hidden&quot;&gt;
+  &lt;img src=&quot;/_next/static/media/installation.50c59fdd.jpg&quot; alt=&quot;&quot; class=&quot;w-[52.6875rem] max-w-none&quot; decoding=&quot;async&quot; /&gt;
+&lt;/p&gt;</pre>
+    </Section>
+
+    <Section sectionClassList={["pb-8"]}>
+      <h2 class="text-4xl font-black">Thank you</h2>
+
+      <p class="text-lg font-medium mt-4">
+        If you've made it this far then thats incredible, thank you for taking
+        the time to read my application.
+      </p>
+      <p class="text-lg font-medium mt-4">
+        I'm excited to see what the future holds for Tailwind and I'm excited to
+        see if I can be a part of that future. v4 looks really slick and it
+        would be really fun to be involved.
+      </p>
+      <p class="text-lg font-medium mt-4">
+        I realise this application is far from perfect, having a broken
+        dark/light mode switch is a bit of a fail, but I hope you can see I have
+        potential.
+      </p>
+      <p class="text-lg font-medium mt-4">
+        I also realise I don't have a portfolio, but I hope the projects I've
+        shared here give you an idea of my skills and passion, design, CSS and
+        obviously Tailwind. I prefer to spend my time building valuable tools,
+        website and web apps rather than on a portfolio that never gets finished
+        or feels out of date if it ever does.
+      </p>
     </Section>
   </main>
 </Layout>
+
+<script>
+  // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+  if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+
+  // Whenever the user explicitly chooses light mode
+  localStorage.theme = "light";
+
+  // Whenever the user explicitly chooses dark mode
+  localStorage.theme = "dark";
+
+  // Whenever the user explicitly chooses to respect the OS preference
+  localStorage.removeItem("theme");
+</script>
