@@ -5,14 +5,60 @@ interface Props {
 }
 
 const { sectionClassList, containerClassList } = Astro.props;
+
+const length = Array.apply(null, Array(16)).map(function () {});
+const length2 = Array.apply(null, Array(9)).map(function () {});
 ---
 
-<section class="p-8 py-4" class:list={sectionClassList}>
+<section class="p-5 py-2 md:p-8 md:py-4" class:list={sectionClassList}>
   <div
-    class="relative border border-gray-800 dark:border-gray-200 p-16 py-36"
+    class="relative overflow-hidden border border-t-6 border-white/40 dark:border-cyan-700/5 outline-1 outline-gray-200/70 dark:outline-gray-800/70 backdrop-blur-xs p-8 py-16 pt-2 md:p-16 lg:py-36 md:px-36 bg-blue-50/40 dark:bg-gray-800/40 rounded-3xl"
     class:list={containerClassList}
   >
-    <div class="max-w-xl m-auto">
+    <div
+      class="md:hidden top-0 left-0 gap-4 sm:gap-8 lg:gap-16 my-4 mb-6 grid grid-cols-8 w-full"
+    >
+      {
+        length.map((data, index) => (
+          <>
+            <div class="aspect-square w-full backdrop-blur-3xl bg-gradient from-white/50 to-white/0  dark:from-black/50 dark:to-black/0 rounded-full border-4 md:border-6 border-blue-50/10 dark:border-gray-900/5 border-opacity-10" />
+          </>
+        ))
+      }
+    </div>
+
+    <!-- large -->
+    <div
+      class="hidden md:grid absolute w-48 top-10 left-10 gap-4 sm:gap-8 lg:gap-8 my-4 mb-6 grid-cols-3"
+    >
+      {
+        length2.map((data, index) => (
+          <>
+            <div class="aspect-square w-full backdrop-blur-3xl bg-gradient from-white/50 to-white/0  dark:from-black/50 dark:to-black/0 rounded-full border-4 md:border-6 border-blue-50/10 dark:border-gray-900/5 border-opacity-10" />
+          </>
+        ))
+      }
+    </div>
+    <div
+      class="hidden md:grid absolute w-48 top-10 right-10 gap-4 sm:gap-8 lg:gap-8 my-4 mb-6 grid-cols-3"
+    >
+      {
+        length2.map((data, index) => (
+          <>
+            <div class="aspect-square w-full backdrop-blur-3xl bg-gradient from-white/50 to-white/0  dark:from-black/50 dark:to-black/0 rounded-full border-4 md:border-6 border-blue-50/10 dark:border-gray-900/5 border-opacity-10" />
+          </>
+        ))
+      }
+    </div>
+    <!-- <div class="absolute top-0 right-0 gap-3 m-10 grid grid-cols-3">
+      {
+        length.map((data) => (
+          <div class="w-16 h-16 backdrop-blur-3xl  rounded-full border-2 border-blue-50/20" />
+        ))
+      }
+    </div> -->
+
+    <div class="max-w-xl m-auto relative z-10">
       <slot />
       <!-- <div
         class="absolute bottom-4 right-4 group flex justify-end text-sm font-medium"
